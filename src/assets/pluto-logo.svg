@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Pluto core">
+  <g id="pluto-halo" fill="none" stroke="#7d1f30" stroke-width="1" opacity="0.5">
+    <circle cx="100" cy="100" r="88" stroke-dasharray="2 10" />
+    <circle cx="100" cy="100" r="74" opacity="0.4" />
+  </g>
+  <g id="pluto-ring" fill="none" stroke="#b22b3f" stroke-width="1.5" opacity="0.8">
+    <circle cx="100" cy="100" r="62" stroke-dasharray="120 260" stroke-linecap="round" />
+  </g>
+  <g id="pluto-u" fill="none" stroke="#f5f2f0" stroke-width="7" stroke-linecap="round">
+    <path d="M62 52 V104 a38 38 0 0 0 76 0 V52" />
+    <path d="M62 52 h0.01" />
+  </g>
+  <g id="pluto-inner" fill="none" stroke="#e34157" stroke-width="2.5" stroke-linecap="round" opacity="0.9">
+    <path d="M78 58 V104 a22 22 0 0 0 44 0 V58" opacity="0.35" />
+    <circle cx="100" cy="104" r="4" fill="#e34157" stroke="none" />
+  </g>
+</svg>
