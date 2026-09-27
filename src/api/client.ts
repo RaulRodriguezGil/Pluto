@@ -52,6 +52,6 @@ export const bujji = {
   },
   /** Raw streaming endpoint (SSE / chunked text). */
   async stream(path: string, body: unknown, signal?: AbortSignal): Promise<Response> {
-    return request(path, { method: "POST", body: JSON.stringify(body), signal });
+    return request(path, { method: "POST", body: JSON.stringify(body), ...(signal ? { signal } : {}) });
   },
 };
