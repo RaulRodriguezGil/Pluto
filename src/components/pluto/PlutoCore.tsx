@@ -1,5 +1,12 @@
 import type { PlutoState } from "@/lib/pluto/types";
 
+// Contour traced from the isolated U in the supplied Pluto series logo.
+const plutoUPath = "M404 805 c39 -132 57 -530 23 -496 -15 15 -230 14 -244 0 -9 -9 -14 -5 -19 16 -11 43 4 331 21 409 8 38 13 71 11 73 -11 11 -118 -252 -151 -371 -45 -161 -44 -270 2 -394 l16 -42 239 0 239 0 16 37 c8 21 22 71 30 111 14 66 13 83 -1 169 -19 113 -69 267 -128 396 -41 90 -67 134 -54 92z";
+
+function LogoU() {
+  return <g transform="translate(-1.165892,82.082139) scale(0.1,-0.1)"><path d={plutoUPath} /></g>;
+}
+
 const stateClass: Record<PlutoState, string> = {
   IDLE: "pluto-idle",
   LISTENING: "pluto-listening",
@@ -37,13 +44,9 @@ export function PlutoCore({ state, size = 320 }: { state: PlutoState; size?: num
         <g className="pluto-ring" fill="none" strokeWidth="1.4" strokeLinecap="round">
           <circle cx="100" cy="100" r="62" strokeDasharray="120 270" />
         </g>
-        <g className="pluto-u" fill="none" strokeWidth="7" strokeLinecap="round">
-          <path d="M62 52 V104 a38 38 0 0 0 76 0 V52" />
-        </g>
-        <g className="pluto-inner" fill="none" strokeWidth="2.4" strokeLinecap="round">
-          <path d="M78 58 V104 a22 22 0 0 0 44 0 V58" opacity="0.4" />
-        </g>
-        <circle className="pluto-spark" cx="100" cy="104" r="3.4" />
+        <svg x="65" y="48" width="70" height="98" viewBox="0 0 58.540012 82.082139" className="pluto-u" fill="currentColor">
+          <LogoU />
+        </svg>
       </svg>
       <span className="pluto-core__label">{label[state]}</span>
     </div>
@@ -52,13 +55,8 @@ export function PlutoCore({ state, size = 320 }: { state: PlutoState; size?: num
 
 export function PlutoGlyph({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 200 200" className={className} aria-hidden="true" fill="none">
-      <path
-        d="M62 52 V104 a38 38 0 0 0 76 0 V52"
-        stroke="currentColor"
-        strokeWidth="12"
-        strokeLinecap="round"
-      />
+    <svg viewBox="0 0 58.540012 82.082139" className={className} aria-hidden="true" fill="currentColor">
+      <LogoU />
     </svg>
   );
 }
