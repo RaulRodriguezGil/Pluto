@@ -161,13 +161,9 @@
   }
 
   & .pluto-u {
-    stroke: var(--foreground);
+    fill: var(--foreground);
     filter: drop-shadow(0 0 14px color-mix(in oklab, var(--signal) 30%, transparent));
     transition: opacity 500ms ease;
-  }
-
-  & .pluto-inner {
-    stroke: var(--signal);
   }
 
   & .pluto-ring {
@@ -176,9 +172,6 @@
     animation: pluto-rotate 42s linear infinite;
   }
 
-  & .pluto-spark {
-    fill: var(--signal);
-  }
 
   & .pluto-core__label {
     position: absolute;
@@ -274,10 +267,6 @@
   & .pluto-ring {
     animation-duration: 4s;
   }
-  & .pluto-inner {
-    stroke: var(--signal);
-    opacity: 1;
-  }
 }
 
 @utility pluto-responding {
@@ -297,7 +286,7 @@
     animation: pluto-flicker 2.6s ease-in-out infinite;
   }
   & .pluto-u {
-    stroke: var(--destructive);
+    fill: var(--destructive);
   }
   & .pluto-core__glow {
     opacity: 0.7;
@@ -313,7 +302,7 @@
     opacity: 0.08;
   }
   & .pluto-u {
-    stroke: var(--muted-foreground);
+    fill: var(--muted-foreground);
   }
   & .pluto-ring {
     animation: none;
