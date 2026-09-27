@@ -57,7 +57,7 @@ export async function sendMessage(args: SendMessageArgs): Promise<void> {
           args.onActivity({
             kind: (evt['kind'] as ActivityItem["kind"]) ?? "Agent",
             label: String(evt['label'] ?? "Actividad"),
-            detail: evt['detail'] ? String(evt['detail']) : undefined,
+            ...(evt['detail'] ? { detail: String(evt['detail']) } : {}),
             status: (evt['status'] as ActivityItem["status"]) ?? "running",
           });
         }
