@@ -39,7 +39,7 @@
   --color-burgundy-dim: var(--burgundy-dim);
   --color-signal: var(--signal);
   --color-signal-soft: var(--signal-soft);
-  --font-display: "Chakra Petch", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
