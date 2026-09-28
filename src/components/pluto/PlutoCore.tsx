@@ -37,13 +37,6 @@ export function PlutoCore({ state, size = 480 }: { state: PlutoState; size?: num
     >
       <div className="pluto-core__glow" aria-hidden="true" />
       <svg viewBox="0 0 200 200" className="pluto-core__svg" aria-hidden="true">
-        <g className="pluto-halo" fill="none" stroke="currentColor" strokeWidth="1">
-          <circle cx="100" cy="100" r="88" strokeDasharray="2 10" opacity="0.45" />
-          <circle cx="100" cy="100" r="74" opacity="0.18" />
-        </g>
-        <g className="pluto-ring" fill="none" strokeWidth="1.4" strokeLinecap="round">
-          <circle cx="100" cy="100" r="62" strokeDasharray="120 270" />
-        </g>
         <svg x="65" y="48" width="70" height="98" viewBox="0 0 58.540012 82.082139" className="pluto-u" fill="currentColor">
           <LogoU />
         </svg>

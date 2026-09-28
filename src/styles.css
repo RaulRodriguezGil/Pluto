@@ -166,11 +166,6 @@
     transition: opacity 500ms ease;
   }
 
-  & .pluto-ring {
-    stroke: var(--signal-soft);
-    transform-origin: 100px 100px;
-    animation: pluto-rotate 42s linear infinite;
-  }
 
 
   & .pluto-core__label {
