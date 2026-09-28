@@ -179,11 +179,6 @@
   }
 }
 
-@keyframes pluto-rotate {
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 @keyframes pluto-breathe {
   0%,
@@ -235,9 +230,6 @@
   & .pluto-core__glow {
     opacity: 0.5;
   }
-  & .pluto-ring {
-    animation-duration: 22s;
-  }
 }
 
 @utility pluto-thinking {
@@ -246,9 +238,6 @@
   }
   & .pluto-core__glow {
     opacity: 0.62;
-  }
-  & .pluto-ring {
-    animation-duration: 9s;
   }
 }
 
@@ -259,9 +248,6 @@
   & .pluto-core__glow {
     opacity: 0.8;
   }
-  & .pluto-ring {
-    animation-duration: 4s;
-  }
 }
 
 @utility pluto-responding {
@@ -270,9 +256,6 @@
   }
   & .pluto-core__glow {
     opacity: 0.66;
-  }
-  & .pluto-ring {
-    animation-duration: 14s;
   }
 }
 
@@ -298,10 +281,6 @@
   }
   & .pluto-u {
     fill: var(--muted-foreground);
-  }
-  & .pluto-ring {
-    animation: none;
-    stroke: var(--burgundy-dim);
   }
 }
 
