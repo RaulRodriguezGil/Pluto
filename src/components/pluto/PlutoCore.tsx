@@ -27,7 +27,7 @@ const label: Record<PlutoState, string> = {
   OFFLINE: "sin conexión",
 };
 
-export function PlutoCore({ state, size = 320 }: { state: PlutoState; size?: number }) {
+export function PlutoCore({ state, size = 480 }: { state: PlutoState; size?: number }) {
   return (
     <div
       className={`pluto-core ${stateClass[state]}`}
