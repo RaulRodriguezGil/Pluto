@@ -27,7 +27,7 @@ const label: Record<PlutoState, string> = {
   OFFLINE: "sin conexión",
 };
 
-export function PlutoCore({ state, size = 624 }: { state: PlutoState; size?: number }) {
+export function PlutoCore({ state, size = 576 }: { state: PlutoState; size?: number }) {
   return (
     <div
       className={`pluto-core ${stateClass[state]}`}
@@ -37,7 +37,7 @@ export function PlutoCore({ state, size = 624 }: { state: PlutoState; size?: num
     >
       <div className="pluto-core__glow" aria-hidden="true" />
       <svg viewBox="0 0 200 200" className="pluto-core__svg" aria-hidden="true">
-        <svg x="65" y="48" width="70" height="98" viewBox="0 0 58.540012 82.082139" className="pluto-u" fill="currentColor">
+        <svg x="65" y="40" width="70" height="98" viewBox="0 0 58.540012 82.082139" className="pluto-u" fill="currentColor">
           <LogoU />
         </svg>
       </svg>
