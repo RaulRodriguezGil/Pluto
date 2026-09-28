@@ -39,7 +39,7 @@
   --color-burgundy-dim: var(--burgundy-dim);
   --color-signal: var(--signal);
   --color-signal-soft: var(--signal-soft);
-  --font-display: "Chakra Petch", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
@@ -129,9 +129,10 @@
 }
 
 @utility label-xs {
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: 0.625rem;
-  letter-spacing: 0.22em;
+  font-weight: 600;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted-foreground);
 }
