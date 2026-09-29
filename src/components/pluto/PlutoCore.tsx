@@ -41,7 +41,7 @@ export function PlutoCore({ state, size = 576 }: { state: PlutoState; size?: num
           <LogoU />
         </svg>
       </svg>
-      <span className="pluto-core__label">{label[state]}</span>
+      {state !== "IDLE" && <span className="pluto-core__label">{label[state]}</span>}
     </div>
   );
 }
