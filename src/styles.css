@@ -180,7 +180,7 @@
 
   & .pluto-core__label {
     position: absolute;
-    bottom: -2.25rem;
+    bottom: 25%;
     font-family: var(--font-mono);
     font-size: 0.625rem;
     letter-spacing: 0.3em;
