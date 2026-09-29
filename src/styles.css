@@ -178,6 +178,10 @@
 
 
 
+  &.pluto-idle .pluto-core__label {
+    display: none;
+  }
+
   & .pluto-core__label {
     position: absolute;
     bottom: 25%;
